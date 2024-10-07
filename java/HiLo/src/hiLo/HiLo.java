@@ -6,24 +6,29 @@ import java.util.Scanner;
 public class HiLo {
 	public static void main (String [] args) {
 		
-		Scanner scan = new Scanner(System.in);
+		Scanner numberScan = new Scanner(System.in);
+		Scanner stringScan = new Scanner(System.in);
 		
-			int ScrtNr = (int) (Math.random() * 100 + 1);
-			int attempts = 1;
+		String playAgain = "y";
+		int attempts = 1;
+		int ScrtNr = 0;
+		
+		do {
+			ScrtNr = (int) (Math.random() * 100 + 1);
 			
 			System.out.println("Pick a number between 1 and 100:");
-			int guess = scan.nextInt();
+			int guess = numberScan.nextInt();
 			
 			if (guess != ScrtNr) {
 				while (guess != ScrtNr) {
 					if (guess < ScrtNr) {
 						System.out.println("Too low! Try again.");
 						++attempts;
-						guess = scan.nextInt();
+						guess = numberScan.nextInt();
 					} else if (guess > ScrtNr) {
 						System.out.println("Too high! Try again.");
 						++attempts;
-						guess = scan.nextInt();
+						guess = numberScan.nextInt();
 					}
 				}
 			} else {
@@ -32,6 +37,11 @@ public class HiLo {
 			
 			System.out.println("Well done! You guessed correctly!");
 			System.out.println("It took you " + attempts + " attempts to guess correctly.");
+			System.out.println("Would you like to play again? (Y/N)");
+			
+			playAgain = stringScan.next();
+			
+		} while (playAgain.equalsIgnoreCase("y"));
 			
 	}
 

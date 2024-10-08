@@ -38,7 +38,7 @@ public class VariablenUndDatentypen {
 		long long1 = 0;
 		
 		//float hält Dezialzahlen variabler Länge. Es braucht weniger Speicher als double (32 Bit), ist aber weniger genau
-		float float1 = (float) 1.23;
+		float float1 = 1.23f;
 		
 		//double hält Dezimalzahlen variabler Länge. Es braucht mehr Speicher als float (64 Bit, doppelt so viel), ist aber genauer
 		double double1 = 4.56;

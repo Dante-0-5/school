@@ -5,7 +5,7 @@ public class DatentypenKorrektur {
 		//Siehe Seite 13 Java-Einstieg
 		
 		//1: int x = 34.5;
-		int x = 34;
+		double x = 34.5;
 		
 		//2: boolean boo = 20;
 		boolean boo = true;
@@ -35,13 +35,13 @@ public class DatentypenKorrektur {
 		long bla = 2147483647;
 		
 		//11: long blabla = 2147483648;
-		long blabla = 2147483647;
+		long blabla = 2147483648L;
 		
 		//12: int 4zahl = 129;
-		int zahl = 129;
+		int zahl4 = 129;
 		
 		//13: int erg = 3_412;
-		int erg = 3412;
+		int erg = 3_412;
 		
 		//14: double wert = 14,3;
 		double wert2 = 14.3;

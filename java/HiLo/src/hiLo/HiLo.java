@@ -42,6 +42,9 @@ public class HiLo {
 			playAgain = stringScan.next();
 			
 		} while (playAgain.equalsIgnoreCase("y"));
+		
+		stringScan.close();
+		numberScan.close();
 			
 	}
 

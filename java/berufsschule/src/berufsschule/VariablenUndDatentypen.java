@@ -13,6 +13,9 @@ public class VariablenUndDatentypen {
 		zahl2 = 2;
 		ergebnis = 0;
 		
+		ergebnis = zahl1 + zahl2;
+		System.out.println("ergebnis"); //Gibt 3 aus
+		
 		//Deklaration und Initialisierung im selben Schritt
 		int zahl3 = 0;
 		

@@ -31,6 +31,16 @@ public class VariablenUndDatentypen {
 		//short hält ganze Zahlen von -32768 - 32767
 		short short1 = 0;
 		
-		//int hält ganze Zahlen von
+		//int hält ganze Zahlen von -2147483648 - 2147483647
+		int integer = 0;
+		
+		//long hält ganze Zahlen von -9,223,372,036,854,775,808 - 9,223,372,036,854,775,807
+		long long1 = 0;
+		
+		//float hält Dezialzahlen variabler Länge. Es braucht weniger Speicher als double (32 Bit), ist aber weniger genau
+		float float1 = (float) 1.23;
+		
+		//double hält Dezimalzahlen variabler Länge. Es braucht mehr Speicher als float (64 Bit, doppelt so viel), ist aber genauer
+		double double1 = 4.56;
 	}
 }

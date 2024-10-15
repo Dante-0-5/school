@@ -45,5 +45,9 @@ public class VariablenUndDatentypen {
 		
 		//double hält Dezimalzahlen variabler Länge. Es braucht mehr Speicher als float (64 Bit, doppelt so viel), ist aber genauer
 		double double1 = 4.56;
+		
+		
+		//String hält eine Menge an Charakteren in einer gewissen Reihenfolge. Er wird großgeschrieben, weil er kein primitiver Datentyp, sondern eine Klasse ist
+		String hello = "Hello World!";
 	}
 }

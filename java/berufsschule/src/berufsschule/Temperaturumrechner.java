@@ -32,8 +32,8 @@ public class Temperaturumrechner {
 			System.out.println("Value in Kelvin: " + valueKelvin + "K");
 			
 		} else if (unit.equalsIgnoreCase("K")) {
-			double valueCelsius = Math.round(value - 273.15);
-			double valueFahrenheit = Math.round(valueCelsius * 1.8 + 32);
+			double valueCelsius = value - 273.15;
+			double valueFahrenheit = valueCelsius * 1.8 + 32;
 			
 			System.out.println("Your value: " + value + "K");
 			System.out.println("Value in °C: " + valueCelsius + "°C");

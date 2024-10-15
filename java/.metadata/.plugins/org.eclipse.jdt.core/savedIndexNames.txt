@@ -1,5 +1,4 @@
 INDEX VERSION 1.134+C:\Users\i7Laptop5\Documents\code\Berufsschule\java\.metadata\.plugins\org.eclipse.jdt.core
-4047373961.index
 504144482.index
 1865797976.index
 2745575786.index

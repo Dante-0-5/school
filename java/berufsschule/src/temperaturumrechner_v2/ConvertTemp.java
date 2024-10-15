@@ -11,9 +11,9 @@ public class ConvertTemp {
 	
 	public static double fahrenheit(double value, String unit) {
 		if (unit.equalsIgnoreCase("C")) {
-			return (value * 1.8 + 32);
+			return value * 1.8 + 32;
 		} else if (unit.equalsIgnoreCase("K")) {
-			return (1.8 * (value - 273.15) + 32);
+			return 1.8 * (value - 273.15) + 32;
 		}
 	}
 	

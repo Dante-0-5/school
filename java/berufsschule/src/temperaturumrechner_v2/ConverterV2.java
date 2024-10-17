@@ -27,6 +27,8 @@ public class ConverterV2 {
 		} else {
 			System.out.println("No unit match! Enter C for °Celsius, F for °Fahrenheit, or K for Kelvin.");
 		}
+		
+		scan.close();
 	}
 
 }

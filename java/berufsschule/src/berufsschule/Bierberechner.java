@@ -13,9 +13,9 @@ public class Bierberechner {
 		int kasten = scan.nextInt();
 		
 		int kastenVoll = flaschen/kasten;
-		int kastenRest = flaschen%kasten;
+		int flaschenRest = flaschen%kasten;
 		
-		System.out.println(kastenVoll + " Kästen können vollständig befüllt werden. " + kastenRest + " Flaschen bleiben übrig.");
+		System.out.println(kastenVoll + " Kästen können vollständig befüllt werden. " + flaschenRest + " Flaschen bleiben übrig.");
 	}
 
 }

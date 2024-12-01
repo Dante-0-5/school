@@ -1,19 +1,22 @@
 package berufsschule;
 
 import java.util.Scanner;
+import java.math.BigInteger;
 
 public class Gerade_Ungerade {
 	public static void main (String [] args) {
 		Scanner scan = new Scanner(System.in);
 		
+		BigInteger dividend = BigInteger.valueOf(2);
+		
 		System.out.println("Enter a positive, whole number:");
-		int number = scan.nextInt();
+		BigInteger number = new BigInteger(scan.next());
 		
-		int even_odd = number%2;
+		 BigInteger even_odd = number.mod(dividend);
 		
-		if (even_odd == 0) {
+		if (even_odd.compareTo(BigInteger.ZERO) == 0) {
 			System.out.println("Number is even!");
-		} else if (even_odd == 1) {
+		} else if (even_odd.compareTo(BigInteger.ONE) == 0) {
 			System.out.println("Number is odd!");
 		}
 	}

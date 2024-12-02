@@ -19,6 +19,8 @@ public class Gerade_Ungerade {
 		} else if (even_odd.compareTo(BigInteger.ONE) == 0) {
 			System.out.println("Number is odd!");
 		}
+		
+		scan.close();
 	}
 
 }

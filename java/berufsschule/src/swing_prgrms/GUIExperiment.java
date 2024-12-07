@@ -1,4 +1,4 @@
-package berufsschule;
+package swing_prgrms;
 
 import javax.swing.*;
 

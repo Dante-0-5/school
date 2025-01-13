@@ -11,7 +11,6 @@ public class NumberguesserGUI {
 		JTextField input = new JTextField();
 		JButton okButton = new JButton("OK");
 		
-		defaultWindow.setLayout(new GridLayout());
 		defaultWindow.add(messageLabel);
 		defaultWindow.add(input);
 		defaultWindow.setSize(600, 600);

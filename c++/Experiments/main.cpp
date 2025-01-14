@@ -13,7 +13,6 @@ static int basicInput()
 
 int main()
 {
-	//std::cout << "Hello World";
 	basicInput();
 	return 0;
 }

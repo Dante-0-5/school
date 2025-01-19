@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-static int basicInput()
+int basicInput()
 {
 	std::string HelloWorld;
 	//string belongs to the standard namespace, so call with std::string

@@ -24,6 +24,8 @@ public class DownloadTimeCalc {
 		int hours = minutes1 / 60;
 		
 		System.out.println("Time remaining: (HR:MN:S)\n" + hours + ":" + minutes2 + ":" + seconds);
+		
+		scan.close();
 	}
 
 }

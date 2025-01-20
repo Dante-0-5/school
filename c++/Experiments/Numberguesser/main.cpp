@@ -31,7 +31,7 @@ int main()
 	tries++;
 	std::cout << "Well done! You guessed corectly!\nIt took you ";
 	std::cout << tries;
-	std::cout << " tries 5,84to guess correctly!";
+	std::cout << " tries to guess correctly!";
 
 	return 0;
 }

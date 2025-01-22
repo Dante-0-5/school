@@ -27,14 +27,14 @@ public class Main {
 		System.out.println("Make your first guess!");
 		
 		while (gameState != 9) {
-			Screen.clear();
 			guess = scan.nextLine();
 			
 			arrayIndex = Word.getIndex(secretWord, guess);
 			for(int i = 0; i < arrayIndex.size(); i++) {
-				//This for loop iterates through arrayIndex. Each entry has the index of secretWordArrayList,
+				//This for loop iterates through arrayIndex. Each entry has the index of secretWordArrayList
 				//at which a correctly guessed letter exists. For each loop, it writes the correct letter
-				//(retrieved from secretWordArrayList using its position from arrayIndex) into wordBlankUncovered.
+				//(retrieved from secretWordArrayList using its position from arrayIndex) into wordBlankUncovered,
+				//and terminates once the end of arrayList is reached.
 				wordBlankArray.set(Integer.valueOf(arrayIndex.get(i)), secretWordArrayList.get(Integer.valueOf(arrayIndex.get(i))));
 			}
 			
@@ -74,12 +74,14 @@ public class Main {
 			wordBlankString = String.join(" ", wordBlankArray);
 			System.out.println("\n" + wordBlankString + "\n");
 			System.out.println("Sorry, you lost. You were looking for " + secretWord + ".");
+			scan.nextLine();
 		} else {
 			Screen.drawUI(false);
 			Screen.hangmanDraw(gameState);
 			wordBlankString = String.join(" ", wordBlankArray);
 			System.out.println("\n" + wordBlankString + "\n");
 			System.out.println("Congratulations! You won!");
+			scan.nextLine();
 		}
 	}
 

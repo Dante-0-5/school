@@ -1,13 +1,6 @@
 package hangman;
 
 public class Screen {
-	public static void clear () {
-		//Clears the screen
-		System.out.print("\033[H\033[2J");  
-		//Resets the cursor to the top of the screen
-		System.out.flush();  
-	}
-	
 	public static void hangmanDraw(int gameState) {
 		//draws the "hangman", depending on the value of gameState
 		switch (gameState) {

@@ -27,7 +27,7 @@ public class Word {
 	}
 	
 	public static ArrayList<String> getIndex(String secretWord, String guess) {
-		//checks whether the secret word contains the players guess. If yes, returns all instances of the guess in an ArrayList. If no, returns an empty ArrayList.
+		//checks whether the secret word contains the players guess. If yes, returns the indexes of the guess in an ArrayList. If no, returns an empty ArrayList.
 		secretWord = secretWord.toUpperCase();
 		guess = guess.toUpperCase();
 		

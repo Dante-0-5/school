@@ -2,7 +2,6 @@ package hangman;
 
 import java.lang.Math;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Word {
 	public static String choose() {

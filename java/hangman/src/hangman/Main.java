@@ -83,6 +83,8 @@ public class Main {
 			System.out.println("Congratulations! You won!");
 			scan.nextLine();
 		}
+		
+		scan.close();
 	}
 
 }

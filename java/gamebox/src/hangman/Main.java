@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-	public static void main (String [] args) throws IOException {
+	public static void hangman () throws IOException {
 		Scanner scan = new Scanner(System.in);
 		int gameState = 0;
 		String guess = "";

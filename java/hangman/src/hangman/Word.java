@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Word {
 	public static String choose() {
 		//generates a random number, uses it to pick a random word from the array, and returns the word as a String
-		String[] dictionary = {"APFEL", "BIRNE", "KIRSCHE"};
+		String[] dictionary = {"AFFE", "APFEL", "BIRNE", "KIRSCHE", "AMPEL", "ANGST", "ARBEIT", "BAUM", "BEIN", "CAMPINGPLATZ", "CHAMPAGNER", "CHRISTBAUM", "DACHGESCHOSS", "DACKEL", "DECKEL", "EIFER", "EHRE", "ELTERN", "FALTE", "FISCH", "FLIEGE", "GAST", "GETREIDE", "GIRAFFE", "HALTESTELLE", "HAUS", "HUND", "IGEL", "INSEKT", "INSPEKTION", "JACKE", "JAGD", "JUGEND", "KISTE", "KRAWATTE", "KUNST", "LAST", "LIEBE", "LEBEN", "MESSER", "MOND", "MANN", "NACHHALTIGKEIT", "NAHRUNG", "NACHT", "ORANGE", "OBRIGKEIT", "OSTERN", "PACKUNG", "PARTEI", "PERSON", "QUADRAT", "QUALLE", "QUELLE", "RIESE", "ROMANTIK", "RUDER", "SCHAF", "SCHANDE", "SCHNEE", "TASSE", "TIEFSEE", "TRAURIGKEIT", "UNSCHULD", "UNTERLEIB", "URSACHE", "VATER", "VIELSEITIGKEIT", "WAHRHEIT", "WASSER", "WIRKUNG", "XYLOPHON", "ZAHN", "ZISTERNE", "ZUNGE"};
 		int dictIndex = (int) (Math.random()*dictionary.length);
 		
 		String word = dictionary[dictIndex];

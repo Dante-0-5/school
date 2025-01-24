@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
 	public static void hangman () throws IOException {
-		Scanner scan = new Scanner(System.in);
+		Scanner scanHangman = new Scanner(System.in);
 		int gameState = 0;
 		String guess = "";
 		ArrayList<String> arrayIndex;
@@ -28,7 +28,7 @@ public class Main {
 		System.out.println("Make your first guess!");
 		
 		while (gameState != 9) {
-			guess = scan.nextLine();
+			guess = scanHangman.nextLine();
 			
 			arrayIndex = Word.getIndex(secretWord, guess);
 			for(int i = 0; i < arrayIndex.size(); i++) {
@@ -75,17 +75,16 @@ public class Main {
 			wordBlankString = String.join(" ", wordBlankArray);
 			System.out.println("\n" + wordBlankString + "\n");
 			System.out.println("Sorry, you lost. You were looking for " + secretWord + ".");
-			scan.nextLine();
+			scanHangman.nextLine();
 		} else {
 			Screen.drawUI(false);
 			Screen.hangmanDraw(gameState);
 			wordBlankString = String.join(" ", wordBlankArray);
 			System.out.println("\n" + wordBlankString + "\n");
 			System.out.println("Congratulations! You won!");
-			scan.nextLine();
+			scanHangman.nextLine();
 		}
 		
-		scan.close();
 	}
 
 }

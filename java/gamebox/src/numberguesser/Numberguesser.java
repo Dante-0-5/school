@@ -10,8 +10,9 @@ public class Numberguesser {
 		int guess = 0;
 		int guesses_total = 1;
 		
+		System.out.println("Guess a number between 1 and 10:");
+		
 		do {
-			System.out.println("Guess a number between 1 and 10:");
 			guess = scanNumberguesser.nextInt();
 			
 			if (guess != scrt_nr) {

@@ -1,6 +1,6 @@
 package arrays;
 
-public class Arrays {
+public class EindimensionaleArrays {
 	public static void main (String [] args) {
 		int zahl = 3;
 		

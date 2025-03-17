@@ -1,4 +1,4 @@
-package berufsschule;
+package grundlagen;
 
 import java.lang.Math;
 

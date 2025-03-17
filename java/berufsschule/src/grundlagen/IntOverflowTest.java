@@ -1,4 +1,4 @@
-package berufsschule;
+package grundlagen;
 
 public class IntOverflowTest {
 	public static void main (String [] args) {

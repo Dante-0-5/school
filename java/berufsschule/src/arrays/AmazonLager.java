@@ -31,7 +31,8 @@ public class AmazonLager {
 				System.out.println("Product is on sale.");
 			}
 		} catch (Exception InputMismatchException) {
-			if (scan.next().equalsIgnoreCase("p")) {
+			switch (scan.next()) {
+			case "p":
 				for (int i = 0; i < 3; i++) {
 					for (int j = 0; j < 4; j++) {
 						if (j != 3) {

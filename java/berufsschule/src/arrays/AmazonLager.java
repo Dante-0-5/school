@@ -14,9 +14,11 @@ public class AmazonLager {
 		storage[0][1] = "Printer";
 		storage[0][2] = "Desktop PC";
 		storage[0][3] = "Tablet";
+		
 		storage[1][0] = "MP3 player";
 		storage[1][1] = "iPhone";
 		storage[1][2] = "Samsung Smartphone";
+		
 		storage[2][0] = "Monitor";
 		storage[2][1] = "Router";
 		

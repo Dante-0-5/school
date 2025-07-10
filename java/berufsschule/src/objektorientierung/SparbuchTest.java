@@ -7,13 +7,12 @@ public class SparbuchTest {
 		boolean end = false;
 		byte action;
 		Scanner scan = new Scanner(System.in);
-		Sparbuch sparbuch = new Sparbuch();
 		
 		System.out.println("Enter your name: ");
-		String name = scan.next();
+		Sparbuch sparbuch = new Sparbuch(scan.next(), 1000, 0.55f);
 		
 		while (end == false) {
-			System.out.println("Welcome " + name + ". What would you like to do?\n\n"
+			System.out.println("Welcome " + sparbuch.getName() + ". What would you like to do?\n\n"
 					+ "(1) Display current balance\n"
 					+ "(2) Post new transaction\n"
 					+ "(3) Show current interest\n"

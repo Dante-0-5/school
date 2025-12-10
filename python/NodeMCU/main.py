@@ -1,11 +1,16 @@
 from machine import Pin, sleep
 import time
 
-led = Pin(16, Pin.OUT)
+ledBlue = Pin(16, Pin.OUT)
+ledRed =  Pin(5, Pin.OUT)
 
-for x in range(0, 10):
-    print("Blink!")
-    led.value(0)
-    time.sleep(1)
-    led.value(1)
-    time.sleep(1)
+while True:
+    print("Blue!")
+    ledRed.value(0)
+    ledBlue.value(0)
+    time.sleep(0.5)
+
+    print("Red!")
+    ledRed.value(1)
+    ledBlue.value(1)
+    time.sleep(0.5)

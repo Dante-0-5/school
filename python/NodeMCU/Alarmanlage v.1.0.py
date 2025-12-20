@@ -1,12 +1,8 @@
-from machine import Pin, ADC
+from machine import Pin
 import time
 
 ledBlue = Pin(16, Pin.OUT)
-clicker = Pin(12, Pin.OUT)
-
 button = Pin(13, Pin.IN, Pin.PULL_UP)
-light = ADC(0)
-
 
 def pollbutton():
     if button.value() == 1:
@@ -14,30 +10,21 @@ def pollbutton():
     else:
         return False
 
-def polllight():
-    if light.read_u16() > 10000:
-        return True
-    else:
-        return False
-
 alertTriggered = False
 alertTime = 0
 
-time.sleep(10)
-
 while True:
     while not alertTriggered:
-        if pollbutton() or polllight():
+        buttonValue = pollbutton()
+        time.sleep(0.01)
+        if buttonValue:
             alertTriggered = True
             alertTime = time.ticks_ms()
-        time.sleep(0.01)
 
-    while time.ticks_diff(time.ticks_ms(), alertTime) < 3000:
+    while time.ticks_diff(time.ticks_ms(), alertTime) < 30000:
         for x in range(0, 10):
             ledBlue.off()
-            clicker.on()
             time.sleep(0.5)
             ledBlue.on()
-            clicker.off()
             time.sleep(0.5)
     alertTriggered = False

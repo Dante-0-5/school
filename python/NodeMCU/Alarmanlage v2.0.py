@@ -38,6 +38,8 @@ def polllight():
     else:
         return False
 
+
+
 alertTriggered = False
 alertTime = 0
 alertTrigger = ""
